@@ -142,6 +142,6 @@ public struct Item: Codable, Equatable {
         if paymentObject != nil { try? container.encode(paymentObject?.rawValue, forKey: .paymentObject) }
         if agentData != nil { try? container.encode(agentData, forKey: .agentData) }
         if supplierInfo != nil { try? container.encode(supplierInfo, forKey: .supplierInfo) }
-        if measurementUnit != nil { try? container. encode (measurementUnit, forKey: .measurementUnit) }
+        if measurementUnit != nil { try? container.encode (measurementUnit, forKey: .measurementUnit) }
     }
 }
