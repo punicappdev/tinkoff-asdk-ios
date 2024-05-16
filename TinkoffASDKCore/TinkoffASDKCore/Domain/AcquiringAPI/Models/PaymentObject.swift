@@ -33,6 +33,9 @@ public enum PaymentObject: String, Equatable {
     case composite
     /// Иной предмет расчета
     case another
+    /// Tовар
+    case commodity
+
 
     public init(rawValue: String) {
         switch rawValue {
@@ -47,6 +50,7 @@ public enum PaymentObject: String, Equatable {
         case "payment": self = .payment
         case "agent_commission": self = .agentCommission
         case "composite": self = .composite
+        case "commodity": self = .commodity
         default: self = .another
         }
     }
